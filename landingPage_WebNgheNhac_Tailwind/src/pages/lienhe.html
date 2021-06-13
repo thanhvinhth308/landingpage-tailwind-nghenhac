@@ -1,0 +1,125 @@
+<style>
+	#nav-contact {
+		color: #c0392b;
+	}
+	#nav-contact.dark-mode {
+		color: #a55eea;
+	}
+
+	@keyframes fadeLeft {
+		0% {
+			transform: translateX(-300%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes fadeRight {
+		0% {
+			transform: translateX(300%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+	.fade-left {
+		animation: fadeLeft 0.5s linear 0s;
+	}
+	.fade-right {
+		animation: fadeRight 0.5s linear 0s;
+	}
+</style>
+<div class="w-5/6 p-2 m-auto overflow-x-hidden space-y-4">
+	<div class="p-2">
+		<h1 class="text-xl font-bold uppercase">Về chúng tôi</h1>
+	</div>
+	<div class="flex flex-col md:flex-row w-full justify-between">
+		<div class="md:w-1/2 px-2 py-4 fade-left rounded-lg">
+			<img
+				style="height: 312px; width: 100%; object-fit: cover"
+				src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+				alt=""
+				class="rounded-lg bg-black"
+			/>
+		</div>
+		<div class="md:w-1/2 px-2 py-4 fade-right">
+			<div class="text-xl flex justify-center items-center flex-col space-y-2 h-full">
+				<p>Được lấy cảm hứng từ <a class="font-bold ml-1" href="https://zingmp3.vn/"> Zing MP3</a></p>
+				<img src="https://www.flaticon.com/svg/static/icons/svg/2907/2907253.svg" alt="" style="width: 100px" />
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-col md:flex-row w-full justify-between">
+		<div class="md:w-1/2 px-2 py-4 fade-left">
+			<div class="text-xl flex justify-center items-center flex-col space-y-2 h-full lg:px-0 px-11">
+				<p>Là kênh âm nhạc phát ra <b>một bài nhạc duy nhất</b></p>
+				<img src="https://www.flaticon.com/svg/static/icons/svg/3659/3659784.svg" alt="" style="width: 100px" />
+			</div>
+		</div>
+		<div class="md:w-1/2 px-2 py-4 fade-right rounded-lg">
+			<img
+				style="height: 312px; width: 100%; object-fit: cover"
+				src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+				alt=""
+				class="rounded-lg bg-black"
+			/>
+		</div>
+	</div>
+	<h2 class="text-xl font-bold">Mọi đóng góp và ý kiến vui lòng điền vào form bên dưới</h2>
+	<div class="flex flex-col md:flex-row w-full justify-between space-y-2">
+		<div class="lg:w-1/2 w-full py-4 px-5 bg-white border bg-opacity-25 rounded-md">
+			<form onsubmit="return false;" class="space-y-4">
+				<div class="w-full text-base flex flex-col">
+					<label for="name" class="font-medium">Tên của bạn</label>
+					<input id="name" type="text" class="bg-gray-200 bg-opacity-25 px-2 py-1 rounded-sm" placeholder="Nguyen Van A" />
+				</div>
+
+				<div class="w-full text-base flex flex-col">
+					<label for="name" class="font-medium">Địa chỉ email</label>
+					<input id="name" type="email" class="bg-gray-200 bg-opacity-25 px-2 py-1 rounded-sm" placeholder="abc@xyz.com" />
+				</div>
+
+				<div class="flex justify-between">
+					<div class="w-5/12 text-base flex flex-col">
+						<label for="name" class="font-medium">Giới tính</label>
+						<select class="bg-gray-200 bg-opacity-25 px-2 py-1 rounded-sm" name="gender">
+							<option value="Nam">Nam</option>
+							<option value="Nu">Nữ</option>
+							<option value="Khac">Khác</option>
+						</select>
+					</div>
+					<div class="w-5/12 text-base flex flex-col">
+						<label for="name" class="font-medium">Số điện thoại</label>
+						<input id="name" type="text" class="bg-gray-200 bg-opacity-25 px-2 py-1 rounded-sm" placeholder="+84xxxxxxxxxx" />
+					</div>
+				</div>
+
+				<div class="w-full text-base flex flex-col">
+					<label for="name" class="font-medium">Nội dung</label>
+					<textarea id="name" class="bg-gray-200 bg-opacity-25 px-2 py-1 rounded-sm focus:outline-none" rows="6"></textarea>
+				</div>
+
+				<div class="flex justify-center space-y-4 flex-col items-center">
+					<img src="./assets/images/capcha.png" alt="" style="height: 70px" />
+
+					<button class="w-20 font-medium text-white py-2 rounded-lg bg-blue-500">Gửi</button>
+				</div>
+			</form>
+		</div>
+		<div class="lg:w-1/2 w-full flex justify-center px-5 text-base flex-col">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d783334.3910944966!2d-59.773605520877155!3d-62.441724093847206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc73fabbad5b1e5d%3A0xce57670015e3af7f!2sBase%20Presidente%20Eduardo%20Frei%20Montalva%2C%20Ch%C3%A2u%20Nam%20C%E1%BB%B1c!5e0!3m2!1svi!2s!4v1609002942941!5m2!1svi!2s"
+				width="600"
+				height="500"
+				frameborder="0"
+				style="border: 0"
+				allowfullscreen=""
+				aria-hidden="false"
+				tabindex="0"
+			></iframe>
+			<p class="text-xs">Địa chỉ trên không phải của chúng tôi và cái form bên cạnh chỉ để cho vui chứ không gửi được đâu 😉</p>
+		</div>
+	</div>
+</div>
+<script></script>

@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+	input,
+	button {
+		@apply focus:outline-none;
+	}
+}
+
+img {
+	vertical-align: middle;
+}
+
+.grid-auto-min-w-12 {
+	grid-template-columns: repeat(auto-fit, min(12.5rem, 100%));
+}
+
+.grid-auto-min-w-21 {
+	grid-template-columns: repeat(auto-fit, min(21rem, 100%));
+}

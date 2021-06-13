@@ -1,0 +1,139 @@
+<style>
+	#nav-trending {
+		color: #c0392b;
+	}
+	#nav-trending.dark-mode {
+		color: #a55eea;
+	}
+	input[type="checkbox"].heart:checked + i {
+		color: #ee5253;
+	}
+</style>
+<div class="home-page container w-5/6 m-auto h-auto space-y-3 my-5">
+	<div class="space-y-2 m-auto mt-4 p-5 rounded-lg bg-opacity-10 bg-gray-400">
+		<h1 class="text-xl font-bold uppercase">#BXH</h1>
+		<div class="w-10/12 m-auto">
+			<canvas id="myChart"></canvas>
+		</div>
+	</div>
+	<div class="space-y-2 m-auto mt-4">
+		<h1 class="text-xl font-bold uppercase">Top 100</h1>
+		<p class="text-base">
+			TOP 100 là danh sách 100 ca khúc hot nhất hiện tại của từng thể loại nhạc, được hệ thống tự động đề xuất dựa trên thông tin số liệu lượt
+			nghe và lượt chia sẻ của từng bài hát trên cả desktop và mobile. Dữ liệu sẽ được lấy trong 30 ngày gần nhất và được cập nhật liên tục.
+		</p>
+	</div>
+	<div class="space-y-2 m-auto" id="content"></div>
+</div>
+<script>
+	loadContent();
+	function loadContent() {
+		$.getJSON("/src/data/top100.json", function (res) {
+			let html = "";
+			for (let i = 0; i < res.length; i++) {
+				html += `
+				<div class="award-music">
+					<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">${res[i].name}</h1>
+					<div id="awards" class="grid gap-4 grid-auto-min-w-12 justify-center lg:justify-between">
+				`;
+
+				for (let j = 0; j < res[i].data.length; j++) {
+					html += `
+					<div class="bg-opacity-10 relative select-none">
+						<div class="overflow-hidden">
+							<img src="${res[i].data[j].image}" class="hover:opacity-75 transform hover:scale-110 cursor-pointer overflow-hidden duration-500" >
+						</div>
+	               		<h1 class="title font-medium text-sm cursor-pointer">${res[i].data[j].title}</h1>
+	           		</div>`;
+				}
+
+				html += "</div></div>";
+			}
+
+			$("#content").html(html);
+		});
+	}
+
+	var ctx = document.getElementById("myChart").getContext("2d");
+	var myChart = new Chart(ctx, {
+		type: "line",
+		data: {
+			labels: ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "CN"],
+			datasets: [
+				{
+					label: "Chúng ta của hiện tại",
+					data: [70, 80, 70, 90, 70, 80, 85],
+					backgroundColor: ["#00000000"],
+					borderColor: ["#ff9f43"],
+					borderWidth: 3,
+					pointBackgroundColor: "#ff9f43",
+				},
+				{
+					label: "Con heo đất",
+					data: [50, 45, 40, 55, 45, 40, 55],
+					backgroundColor: ["#00000000"],
+					borderColor: ["#10ac84"],
+					borderWidth: 3,
+					pointBackgroundColor: "#10ac84",
+				},
+				{
+					label: "Con heo đất",
+					data: [10, 20, 15, 5, 20, 10, 20],
+					backgroundColor: ["#00000000"],
+					borderColor: ["#5f27cd"],
+					borderWidth: 3,
+					pointBackgroundColor: "#5f27cd",
+				},
+				{
+					label: "Con heo đất",
+					data: [40, 35, 40, 30, 15, 25, 35],
+					backgroundColor: ["#00000000"],
+					borderColor: ["#ee5253"],
+					borderWidth: 3,
+					pointBackgroundColor: "#ee5253",
+				},
+				{
+					label: "Con heo đất",
+					data: [20, 20, 25, 10, 15, 20, 30],
+					backgroundColor: ["#00000000"],
+					borderColor: ["#0abde3"],
+					borderWidth: 3,
+					pointBackgroundColor: "#0abde3",
+				},
+			],
+		},
+		options: {
+			legend: {
+				display: false,
+			},
+			scales: {
+				yAxes: [
+					{
+						display: true,
+						gridLines: {
+							display: false,
+						},
+						scaleLabel: {
+							display: false,
+						},
+						ticks: {
+							display: false,
+							min: 0,
+							max: 100,
+						},
+					},
+				],
+				xAxes: [
+					{
+						gridLines: {
+							display: false,
+						},
+						ticks: {
+							fontColor: "#c8d6e5",
+						},
+					},
+				],
+			},
+		},
+	});
+</script>

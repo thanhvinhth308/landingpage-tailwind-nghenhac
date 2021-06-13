@@ -1,0 +1,42 @@
+<div id="playlist" class="fixed bottom-16 right-1 z-10 h-16 w-16 rounded-full bg-purple-700 shadow-sm hover:shadow-md">
+	<audio id="audio" src="./assets/audio/asd.mp3"></audio>
+	<button id="disc">
+		<img src="./assets/images/playlist.png" alt="" />
+	</button>
+	<div id="song" class="w-40 bg-white shadow-md absolute right-20 top-1/2 transform -translate-y-1/2 p-2 rounded-sm font-medium space-y-2">
+		<div class="flex justify-center">
+			<marquee class="text-black" width="60%" direction="left" scrollamount="2">Anh sẽ đến - Trịnh Thăng Bình</marquee>
+		</div>
+		<div class="flex justify-center space-x-2 w-full">
+			<i class="fas fa-backward text-black"></i>
+			<i onclick="audioEvent()" id="play-btn" class="fas fa-play text-black cursor-pointer"></i>
+			<i class="fas fa-forward text-black"></i>
+		</div>
+		<div class="w-full flex justify-center">
+			<input id="time" class="rounded-lg overflow-hidden appearance-none bg-gray-100 h-1 w-128" type="range" min="0" max="249" value="0" />
+		</div>
+	</div>
+</div>
+<script>
+	let i = 0;
+	let isPlay = true;
+	var timer = setInterval(() => {
+		if (isPlay) {
+			$("#time").val(i);
+			i++;
+		}
+	}, 1000);
+
+	function audioEvent() {
+		if ($("#play-btn").attr("class").includes("fa-play")) {
+			document.getElementById("audio").play();
+			$("#play-btn").removeClass("fa-play").addClass("fa-pause");
+			isPlay = true;
+		} else {
+			document.getElementById("audio").pause();
+			$("#play-btn").removeClass("fa-pause").addClass("fa-play");
+			isPlay = false;
+		}
+	}
+	audioEvent();
+</script>

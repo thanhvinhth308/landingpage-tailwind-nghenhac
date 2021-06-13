@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link rel="icon" type="image/png" href="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/icon_zing_mp3_60.png" />
+		<link rel="stylesheet" href="./assets/css/login.css" />
+		<link rel="stylesheet" href="./assets/css/common.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+			integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container flex-row flex">
+			<section class="left relative w-2/5 p-20 min-h-screen hidden lg:block">
+				<div class="logo text-3xl font-bold hover:text-pink-500">
+					<a href="./index.html">
+						<img src="./assets/images/logo-light.png" alt="" style="height: 40px" />
+					</a>
+				</div>
+				<h1 class="text-xl font-medium">Kênh âm nhạc số 1 Việt Nam</h1>
+				<div class="left--image"></div>
+			</section>
+
+			<section class="right flex justify-center items-center w-screen lg:w-3/5 h-screen">
+				<div class="fixed right-2 top-1 flex lg:block justify-around w-11/12 lg:w-auto">
+					<div class="logo text-3xl font-bold lg:hidden hover:text-pink-500">
+						<a href="./index.html"><img src="./assets/images/logo-light.png" alt="" style="height: 30px" /> </a>
+					</div>
+					<h3 class="mt-2 lg:mt-0">Chưa có tài khoản. <a href="./register.html" class="hover:underline text-blue-300">Tạo tài khoản</a></h3>
+				</div>
+				<div class="login w-80">
+					<div class="form--header mb-5">
+						<h2 class="text-2xl font-semibold mb-5">Đăng nhập</h2>
+						<button class="inline-block w-12 h-12 bg-red-500 hover:bg-red-600 focus:outline-none text-white font-medium rounded-xl mb-10">
+							<i class="fab fa-google"></i>
+						</button>
+						<button
+							class="inline-block w-12 h-12 bg-blue-500 hover:bg-blue-600 focus:outline-none text-white font-medium rounded-xl mb-10"
+						>
+							<i class="fab fa-facebook-f"></i>
+						</button>
+						<button
+							class="inline-block w-12 h-12 bg-blue-300 hover:bg-blue-400 focus:outline-none text-white font-medium rounded-xl mb-10"
+						>
+							<i class="fab fa-twitter"></i>
+						</button>
+						<hr class="divider" />
+					</div>
+					<code>user | 123456</code>
+					<form onsubmit="return false;" class="login--form" autocomplete="off">
+						<div class="form--content">
+							<div class="form-group my-5">
+								<label for="username" class="block font-bold">Tên đăng nhập hoặc email</label>
+								<input
+									required
+									type="text"
+									id="username"
+									name="username"
+									class="mt-1 p-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+								/>
+							</div>
+							<div class="form-group my-5">
+								<div class="flex justify-between">
+									<label for="password" class="font-bold">Mật khẩu</label>
+									<div for="password" class="text-blue-400"><a tabindex="-1" href="#">Quên mật khẩu</a></div>
+								</div>
+								<input
+									required
+									minlength="6"
+									type="password"
+									id="password"
+									name="password"
+									class="mt-1 p-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+								/>
+							</div>
+						</div>
+						<button
+							id="login-btn"
+							class="w-full mt-3 px-10 py-3 bg-pink-500 hover:bg-pink-600 focus:outline-none text-white font-medium rounded-xl mb-10"
+						>
+							Đăng nhập
+						</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</body>
+	<script src="./assets/lib/jquery.min.js"></script>
+
+	<script>
+		$("#login-btn").click(() => {
+			var username = $("#username").val();
+			var password = $("#password").val();
+			if (username === "user" && password === "123456") {
+				window.localStorage.setItem("islogin", "true");
+				window.location.href = "./index.html";
+			}
+		});
+	</script>
+</html>

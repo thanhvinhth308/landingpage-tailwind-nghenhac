@@ -1,0 +1,127 @@
+[
+	{
+		"name": "Nổi bật",
+		"data": [
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916374/IE104/top/nb1.jpg",
+				"title": "Top 100 Bài Nhạc Trẻ Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916374/IE104/top/nb2.jpg",
+				"title": "Top 100 Pop Âu Mỹ Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916374/IE104/top/nb3.jpg",
+				"title": "Top 100 Nhạc Electronic Dance"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916374/IE104/top/nb4.jpg",
+				"title": "Top 100 Nhạc Trữ Tình Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916374/IE104/top/nb5.jpg",
+				"title": "Top 100 Nhạc Hàn Quốc Hay Nhất"
+			}
+		]
+	},
+	{
+		"name": "Việt Nam",
+		"data": [
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn1.jpg",
+				"title": "Top 100 Bài Nhạc Trẻ Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn2.jpg",
+				"title": "Top 100 Pop Âu Mỹ Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn3.jpg",
+				"title": "Top 100 Nhạc Electronic Dance"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn4.jpg",
+				"title": "Top 100 Nhạc Trữ Tình Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn5.jpg",
+				"title": "Top 100 Nhạc Hàn Quốc Hay Nhất"
+			}
+		]
+	},
+	{
+		"name": "Âu Mỹ",
+		"data": [
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn1.jpg",
+				"title": "Top 100 Bài Nhạc Trẻ Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn2.jpg",
+				"title": "Top 100 Pop Âu Mỹ Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn3.jpg",
+				"title": "Top 100 Nhạc Electronic Dance"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn4.jpg",
+				"title": "Top 100 Nhạc Trữ Tình Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/vn5.jpg",
+				"title": "Top 100 Nhạc Hàn Quốc Hay Nhất"
+			}
+		]
+	},
+	{
+		"name": "Hoà Tấu",
+		"data": [
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/kn1.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Nhạc Cụ Guitar Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/kn2.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Nhạc Cụ Cello Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/kn3.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Nhạc Cụ Piano Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/kn4.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Cổ Điển Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/kn5.jpg",
+				"title": "Top 100 Hòa Tấu New Age / World Music Hay Nhất"
+			}
+		]
+	},
+	{
+		"name": "Âu Mỹ",
+		"data": [
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/ht1.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Nhạc Cụ Guitar Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/ht2.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Nhạc Cụ Cello Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/ht3.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Nhạc Cụ Piano Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/ht4.jpg",
+				"title": "Top 100 Nhạc Hòa Tấu Cổ Điển Hay Nhất"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608916377/IE104/top/ht5.jpg",
+				"title": "Top 100 Hòa Tấu New Age / World Music Hay Nhất"
+			}
+		]
+	}
+]

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign in</title>
+		<link rel="stylesheet" href="./assets/css/login.css" />
+		<link rel="stylesheet" href="./assets/css/common.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+			integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container flex-row flex">
+			<section
+				class="left relative w-2/5 p-20 min-h-screen hidden lg:block"
+				style="--background-color: #f2d184; --background: url('../images/sign-up.png')"
+			>
+				<div class="logo text-3xl font-bold">
+					<a href="./index.html"><img src="./assets/images/logo-light.png" alt="" style="height: 40px" /></a>
+				</div>
+				<h1>Discover the world’s top Designers & Creatives.</h1>
+				<div class="left--image"></div>
+			</section>
+			<section class="right flex justify-center items-center w-screen lg:w-3/5 h-screen">
+				<div class="fixed right-2 top-1 flex lg:block justify-around w-11/12 lg:w-auto">
+					<div class="logo text-3xl font-bold lg:hidden hover:text-pink-500">
+						<a href="./index.html"><img src="./assets/images/logo-light.png" alt="" style="height: 30px" /></a>
+					</div>
+					<h3 class="mt-2">Đã có tài khoản. <a href="./login.html" class="hover:underline text-blue-300">Đăng nhập</a></h3>
+				</div>
+				<div class="login w-80">
+					<div class="form--header mb-5">
+						<h2 class="text-2xl font-semibold mb-5">Đăng kí</h2>
+						<button class="inline-block w-12 h-12 bg-red-500 hover:bg-red-600 focus:outline-none text-white font-medium rounded-xl mb-10">
+							<i class="fab fa-google"></i>
+						</button>
+						<button
+							class="inline-block w-12 h-12 bg-blue-500 hover:bg-blue-600 focus:outline-none text-white font-medium rounded-xl mb-10"
+						>
+							<i class="fab fa-facebook-f"></i>
+						</button>
+						<button
+							class="inline-block w-12 h-12 bg-blue-300 hover:bg-blue-400 focus:outline-none text-white font-medium rounded-xl mb-10"
+						>
+							<i class="fab fa-twitter"></i>
+						</button>
+						<hr class="divider" />
+					</div>
+					<form class="login--form" autocomplete="off">
+						<div class="form--content">
+							<div class="flex justify-between w-full">
+								<div class="form-group w-5/12">
+									<label for="username" class="block font-bold">Tên</label>
+									<input
+										required
+										type="text"
+										id="username"
+										name="username"
+										class="mt-1 p-2 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm border border-gray-300 rounded-md w-full bg-gray-100 focus-within:bg-white"
+									/>
+								</div>
+								<div class="form-group w-6/12">
+									<label for="username" class="block font-bold">Tên đăng nhập</label>
+									<input
+										required
+										type="text"
+										id="username"
+										name="username"
+										class="mt-1 p-2 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm border border-gray-300 rounded-md w-full bg-gray-100 focus-within:bg-white"
+									/>
+								</div>
+							</div>
+							<div class="form-group my-5">
+								<label for="password" class="font-bold">Email</label>
+								<input
+									required
+									type="password"
+									id="password"
+									name="password"
+									class="mt-1 p-2 focus:outline-none focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border border-gray-300 rounded-md bg-gray-100 focus-within:bg-white"
+								/>
+							</div>
+							<div class="form-group my-5">
+								<label for="password" class="font-bold">Mật khẩu</label>
+								<input
+									required
+									minlength="6"
+									type="password"
+									id="password"
+									name="password"
+									placeholder="+6 characters"
+									class="mt-1 p-2 focus:outline-none focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border border-gray-300 rounded-md font-normal bg-gray-100 focus-within:bg-white"
+								/>
+							</div>
+							<div class="form-group my-5">
+								<label for="password" class="font-bold">Nhập lại mật khẩu</label>
+								<input
+									required
+									minlength="6"
+									type="password"
+									id="password"
+									name="password"
+									placeholder="+6 characters"
+									class="mt-1 p-2 focus:outline-none focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border border-gray-300 rounded-md font-normal bg-gray-100 focus-within:bg-white"
+								/>
+							</div>
+						</div>
+						<button class="w-full mt-3 px-10 py-3 bg-pink-500 hover:bg-pink-600 focus:outline-none text-white font-medium rounded-xl">
+							Tạo tài khoản
+						</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

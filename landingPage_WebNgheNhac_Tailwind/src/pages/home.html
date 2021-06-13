@@ -1,0 +1,269 @@
+<style>
+	#nav-home {
+		color: #c0392b;
+	}
+	#nav-home.dark-mode {
+		color: #a55eea;
+	}
+	input[type="checkbox"].heart:checked + i {
+		color: #ee5253;
+	}
+</style>
+
+<div class="home-page container w-11/12 m-auto h-auto">
+	<div id="slide"></div>
+	<div id="main" class="mt-2 flex">
+		<div class="left w-full lg:w-4/5">
+			<div class="pt-10 lg:block hidden">
+				<h1 class="text-xl font-bold uppercase">Music for your life</h1>
+				<p class="text-base">Tận hưởng trải nghiệm nghe nhạc không quảng cáo, không cần kết nối mạng và nhiều lợi ích khác</p>
+			</div>
+			<hr class="mt-3" />
+			<div class="award-music">
+				<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">Nổi Bật</h1>
+				<div id="awards" class="grid gap-4 grid-auto-min-w-12 justify-center lg:justify-between"></div>
+			</div>
+			<div class="child-music">
+				<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">Chill một chút thôi</h1>
+				<div id="child" class="grid gap-4 grid-auto-min-w-12 justify-center lg:justify-between"></div>
+			</div>
+			<div class="connect-music">
+				<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">Âm nhạc kết nối</h1>
+				<div id="connect" class="grid gap-4 grid-auto-min-w-12 justify-center lg:justify-between"></div>
+			</div>
+			<div class="new-music">
+				<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">Mới phát hành</h1>
+				<div id="new" class="grid gap-4 grid-auto-min-w-21 justify-center lg:justify-between"></div>
+			</div>
+			<div class="top">
+				<div class="flex justify-between items-end">
+					<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">#BXH</h1>
+					<button onclick="loadBXHpage()" class="title font-medium text-base cursor-pointer">Xem thêm...</button>
+				</div>
+				<div id="music-list" class="grid gap-4 grid-auto-min-w-21 justify-center lg:justify-between"></div>
+			</div>
+			<div class="mv-hot">
+				<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">MV Hot</h1>
+				<div class="my-4 flex lg:flex-row flex-col">
+					<div class="lg:w-7/12 w-full">
+						<div class="w-full mb-4">
+							<div class="bg-opacity-10 relative">
+								<div class="overflow-hidden relative lg:w-11/12">
+									<img
+										src="https://res.cloudinary.com/nhadam/image/upload/v1608883212/IE104/mv/mv1.jpg"
+										class="transform hover:scale-110 cursor-pointer overflow-hidden duration-500 object-cover"
+									/>
+									<div
+										class="w-full top-0 h-full absolute transition duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100 flex justify-center items-center"
+									>
+										<i class="fas fa-play text-4xl text-white duration-300 cursor-pointer transform hover:scale-125"></i>
+									</div>
+								</div>
+								<h1 class="title text-base cursor-pointer font-medium">Không thể cùng nhau sống suốt kiếp</h1>
+								<h1 class="title text-sm cursor-pointer">Hoà minzy</h1>
+							</div>
+						</div>
+					</div>
+					<div class="lg:w-5/12 w-full">
+						<div class="flex mb-1 gap-2 h-1/2">
+							<div class="w-100 lg:w-1/2">
+								<div class="bg-opacity-10 relative">
+									<div class="overflow-hidden">
+										<img
+											src="https://res.cloudinary.com/nhadam/image/upload/v1608883212/IE104/mv/mv2.jpg"
+											class="transform hover:scale-110 cursor-pointer overflow-hidden duration-500"
+										/>
+									</div>
+									<h3 class="title text-base cursor-pointer font-medium">Ảo tưởng</h3>
+									<h4 class="title text-sm cursor-pointer">Vân JP</h4>
+								</div>
+							</div>
+							<div class="w-100 lg:w-1/2">
+								<div class="bg-opacity-10 relative">
+									<div class="overflow-hidden">
+										<img
+											src="https://res.cloudinary.com/nhadam/image/upload/v1608883212/IE104/mv/mv3.jpg"
+											class="transform hover:scale-110 cursor-pointer overflow-hidden duration-500"
+										/>
+									</div>
+									<h3 class="title text-base cursor-pointer font-medium">Ở lại với anh</h3>
+									<h4 class="title text-sm cursor-pointer">Minh huy</h4>
+								</div>
+							</div>
+						</div>
+						<div class="flex mb-1 gap-2 h-1/2">
+							<div class="w-100 lg:w-1/2 h-full">
+								<div class="bg-opacity-10 relative">
+									<div class="overflow-hidden">
+										<img
+											src="https://res.cloudinary.com/nhadam/image/upload/v1608883212/IE104/mv/mv4.jpg"
+											class="transform hover:scale-110 cursor-pointer overflow-hidden duration-500"
+										/>
+									</div>
+									<h3 class="title text-base cursor-pointer font-medium">Nhìn thế giời</h3>
+									<h4 class="title text-sm cursor-pointer">Ngọc Kara</h4>
+								</div>
+							</div>
+							<div class="w-100 lg:w-1/2">
+								<div class="bg-opacity-10 relative">
+									<div class="overflow-hidden">
+										<img
+											src="https://res.cloudinary.com/nhadam/image/upload/v1608883212/IE104/mv/mv5.jpg"
+											class="transform hover:scale-110 cursor-pointer overflow-hidden duration-500"
+										/>
+									</div>
+									<h3 class="title text-base cursor-pointer font-medium">Hoài một đời chờ đợi</h3>
+									<h4 class="title text-sm cursor-pointer">Khang Việt</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right hidden md:block w-1/5 p-4">
+			<div id="banner" class="space-y-4 mt-5 hidden lg:block"></div>
+			<div id="top-music" class="space-y-4 mt-5 hidden lg:block"></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	loadSlide();
+	loadAward();
+	loadChild();
+	loadConnect();
+	loadNew();
+	loadMusic();
+	loadBanner();
+
+	function loadBanner() {
+		$.getJSON("/src/data/banner.json", function (data) {
+			let html = "";
+			for (let i = 0; i < data.length; i++) {
+				html += `
+	           <div class="bg-opacity-10 relative select-none w-full">
+	               <img class="w-full" src="${data[i]}" alt="" />
+	           </div>`;
+			}
+			$("#banner").html(html);
+		});
+	}
+
+	function loadSlide() {
+		$.ajax({
+			url: "/src/components/slide.html",
+			success: function (result) {
+				$("#slide").html(result);
+			},
+		});
+	}
+
+	function loadAward() {
+		$.getJSON("/src/data/awards.json", function (data) {
+			let html = "";
+			for (let i = 0; i < data.length; i++) {
+				html += `
+	           <div class="bg-opacity-10 relative select-none">
+	               <div class="overflow-hidden">
+	                   <img src="${data[i].image}" class="hover:opacity-75 transform hover:scale-110 cursor-pointer overflow-hidden duration-500" >
+	               </div>
+	               <h1 class="title font-medium text-sm cursor-pointer">${data[i].title}</h1>
+	           </div>`;
+			}
+
+			$("#awards").html(html);
+		});
+	}
+
+	function loadChild() {
+		$.getJSON("/src/data/child.json", function (data) {
+			let html = "";
+			for (let i = 0; i < data.length; i++) {
+				html += `
+	           <div class="bg-opacity-10 relative select-none">
+	               <div class="overflow-hidden">
+	                   <img src="${data[i].image}" class="hover:opacity-75 transform hover:scale-110 cursor-pointer overflow-hidden duration-500" >
+	               </div>
+	               <h1 class="title font-medium text-sm cursor-pointer">${data[i].title}</h1>
+	           </div>`;
+			}
+
+			$("#child").html(html);
+		});
+	}
+
+	function loadConnect() {
+		$.getJSON("/src/data/connect.json", function (data) {
+			let html = "";
+			for (let i = 0; i < data.length; i++) {
+				html += `
+	           <div class="bg-opacity-10 relative select-none">
+	               <div class="overflow-hidden">
+	                   <img src="${data[i].image}" class="hover:opacity-75 transform hover:scale-110 cursor-pointer overflow-hidden duration-500" >
+	               </div>
+	               <h1 class="title font-medium text-sm cursor-pointer">${data[i].title}</h1>
+	           </div>`;
+			}
+
+			$("#connect").html(html);
+		});
+	}
+	function loadNew() {
+		$.getJSON("/src/data/new.json", function (data) {
+			let html = "";
+			for (let i = 0; i < data.length; i++) {
+				html += `
+                <div data-aos="fade-up" class="flex rounded-sm shadow-md hover:shadow-lg duration-300" >  
+                    <div class="overflow-hidden w-1/3 relative">
+                        <img class="w-full rounded-l-sm transform cursor-pointer overflow-hidden duration-500" src="${data[i].image}" />
+                        <div class="w-full h-full absolute bg-black rounded-sm bg-opacity-60 top-0 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-around text-white">
+                            <label class="select-none cursor-pointer">
+                                <input class="heart" type="checkbox" hidden/>
+                                <i class="far text-white fa-heart "></i>
+                            </label> 
+                            <i onclick="loadPlayList()" class="fal fa-play-circle cursor-pointer text-3xl"></i>
+                            <i class="far fa-ellipsis-h"></i>
+                        </div>
+                    </div>		
+                    <div class="ml-2 p-2">
+                        <h3 class="title text-base overflow-visible font-bold cursor-pointer">${data[i].name}</h3>
+                        <h4 class="title font-medium text-sm cursor-pointer">${data[i].singer}</h4>
+                    </div>
+                </div>`;
+			}
+
+			$("#new").html(html);
+		});
+	}
+
+	function loadMusic() {
+		$.getJSON("/src/data/music.json", function (data) {
+			let html = "";
+			for (let i = 0; i < data.length; i++) {
+				html += `
+                <div class="flex p-4 hover:shadow-md transition-all duration-300 rounded-md cursor-pointer">
+                    <div class="w-12">
+                        <h2 class="text-2xl font-bold" style="color:var(--text-secondary)">${i + 1}</h2>
+                    </div>
+                    <div>
+                        <h3 onclick="loadPlayList()" class="title font-bold text-base cursor-pointer">${data[i].name}</h3>
+                        <h4 class="title cursor-pointer">${data[i].singer}</h4>	
+                    </div>
+                </div>`;
+			}
+
+			$("#music-list").html(html);
+			$("#top-music").html(html);
+		});
+	}
+
+	function loadBXHpage() {
+		$.ajax({
+			url: "./pages/bxh.html",
+			success: function (result) {
+				$("#body").html(result);
+			},
+		});
+	}
+</script>

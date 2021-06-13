@@ -1,0 +1,100 @@
+[
+	{
+		"group": "Nổi bật",
+		"data": [
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs1.jpg",
+				"name": "K-ICM"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs2.jpg",
+				"name": "Jack"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs3.jpg",
+				"name": "Bảo Bình"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs4.jpg",
+				"name": "Anh Tú"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs5.jpg",
+				"name": "Hiền Hồ"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs6.jpg",
+				"name": "Nhật Phong"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs7.jpg",
+				"name": "AMEE"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs8.jpg",
+				"name": "Bảo Bình"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs9.jpg",
+				"name": "Lil Zpoet"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs10.jpg",
+				"name": "Hoài Phong"
+			}
+		]
+	},
+	{
+		"group": "Hàn quốc",
+		"data": [
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs11.jpg",
+				"name": "BLACKPINK"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs12.jpg",
+				"name": "T-ARA"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs13.jpg",
+				"name": "BIGBANG"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs14.jpg",
+				"name": "IU"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs15.jpg",
+				"name": "Hiền Hồ"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs16.jpg",
+				"name": "Punch"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs17.jpg",
+				"name": "TAEYEON"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs18.jpg",
+				"name": "Bolbbalgan4"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs19.jpg",
+				"name": "EXO"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs20.jpg",
+				"name": "Red Velvet"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs21.jpg",
+				"name": "Ubuntu"
+			},
+			{
+				"image": "https://res.cloudinary.com/nhadam/image/upload/v1608925532/IE104/singer/cs22.jpg",
+				"name": "Viettel"
+			}
+		]
+	}
+]

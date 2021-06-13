@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/png" href="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/icon_zing_mp3_60.png" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Zing MP4 | Nghe tải nhạc chất lượng cao trên desktop, mobile & TV</title>
+	<!-- css lib -->
+	<link rel="stylesheet" href="./assets/lib/chartjs/Chart.min.css" />
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="./assets/css/index.css" />
+	<link rel="stylesheet" href="./assets/css/common.css" />
+
+	<!-- js lib -->
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="./assets/lib/chartjs/Chart.bundle.min.js"></script>
+</head>
+
+<body>
+	<div id="dark-mode"></div>
+	<header id="header" class="select-none z-50 w-full sticky top-0 p-2 shadow-md">
+		<nav class="nav container w-11/12 xl:w-5/6 m-auto font-bold flex flex-col lg:flex-row justify-between">
+			<div class="flex flex-row justify-between">
+				<div onclick="loadHomePage()" class="nav--logo cursor-pointer font-bold">
+					<div id="logo"></div>
+				</div>
+				<div id="hamburger" class="hamburger p-1 cursor-pointer lg:hidden">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+						<div class="hamburger-inner"></div>
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</div>
+			<div class="nav--main hidden lg:block opacity-0 lg:opacity-100 transition">
+				<ul class="nav flex-col uppercase text-center lg:flex-row lg:flex">
+					<li onclick="loadHomePage()" id="nav-home" class="nav-item py-2">
+						<a class="cursor-pointer">Trang chủ</a>
+					</li>
+					<li onclick="loadBXHpage()" id="nav-trending" class="nav-item py-2">
+						<a class="cursor-pointer">Bảng xếp hạng</a>
+					</li>
+					<li onclick="loadChudePage()" id="nav-title" class="nav-item py-2">
+						<a class="cursor-pointer">Theo chủ đề</a>
+					</li>
+					<li onclick="loadCasiPage()" id="nav-singer" class="nav-item py-2">
+						<a class="cursor-pointer">Theo ca sĩ</a>
+					</li>
+					<li onclick="loadContacts()" id="nav-contact" class="nav-item py-2">
+						<a class="cursor-pointer">Liên hệ</a>
+					</li>
+					<li class="lg:ml-4">
+						<div id="islogin">
+							<button
+								class="btn-primary text-sm py-2 px-4 transition-colors duration-500 border rounded-xl lg:mr-2">
+								<a href="./login.html">Đăng nhập</a>
+							</button>
+							<button
+								class="btn-secondary py-2 text-sm px-4 border transition-colors duration-500 rounded-xl mt-4 lg:mt-0">
+								<a href="./register.html">Đăng kí</a>
+							</button>
+						</div>
+					</li>
+
+					<div class="flex justify-center items-center ml-2 cursor-pointer mt-4 lg:mt-0">
+						<input type="checkbox" id="toggle-dark-mode" class="switch-input" value="true" />
+						<label for="toggle-dark-mode" class="switch"></label>
+					</div>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- play list -->
+	<div id="playlist"></div>
+	<!-- scroll top -->
+	<button class="fixed bottom-4 z-10 right-4 w-10 h-10 rounded-full bg-gray-200 shadow-sm hover:shadow-md"
+		id="scroll-top">
+		<i class="far fa-chevron-up"></i>
+	</button>
+	<!-- dom.js load here -->
+	<div id="body"></div>
+
+	<section id="footer">
+		<footer class="bg-gray-400 bg-opacity-20 py-5">
+			<div class="w-5/6 flex m-auto px-2 py-4 flex-col justify-center lg:justify-between lg:flex-row space-y-4">
+				<div class="lg:w-1/5 w-full pr-4">
+					<div id="logo"></div>
+					<p>coppyright α2020</p>
+				</div>
+				<div class="flex w-4/5 lg:justify-between flex-col justify-center lg:flex-row">
+					<div class="space-y-2 mt-4">
+						<h3 class="text-base font-bold">Nhóm tác giả</h3>
+						<p class="">18521648 - Lê Thành Vinh</p>
+					</div>
+					<div class="space-y-2 mt-4">
+						<h3 class="text-base font-bold">Đồ án cuối kì</h3>
+					</div>
+					<div class="space-y-2 mt-4 hidden lg:block">
+						<h3 class="text-base font-bold">Nhóm tác giả</h3>
+						<p class="">18521648 - Lê Thành Vinh</p>
+					</div>
+					<div class="space-y-2 mt-4 hidden lg:block">
+						<h3 class="text-base font-bold">Đồ án cuối kì</h3>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="bg-gray-500 bg-opacity-20">
+			<div class="w-5/6 m-auto px-2 py-2">
+				<div class="text-base flex justify-end space-x-2 p-1">
+					<label class="fab fa-facebook"></label>
+					<label class="fab fa-facebook-messenger"></label>
+					<label class="fab fa-youtube"></label>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- js library -->
+	<script src="./assets/lib/jquery.min.js"></script>
+
+	<!-- custom js -->
+	<script src="./assets/js/index.js"></script>
+	<script src="./assets/js/dom.js"></script>
+</body>
+
+</html>

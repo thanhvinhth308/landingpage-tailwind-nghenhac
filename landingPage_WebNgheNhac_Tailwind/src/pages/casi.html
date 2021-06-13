@@ -1,0 +1,50 @@
+<style>
+	#nav-singer {
+		color: #c0392b;
+	}
+	#nav-singer.dark-mode {
+		color: #a55eea;
+	}
+	input[type="checkbox"].heart:checked + i {
+		color: #ee5253;
+	}
+</style>
+<div class="home-page container w-5/6 m-auto h-auto space-y-3 my-5">
+	<div class="space-y-2 m-auto mt-4">
+		<h1 class="text-xl font-bold uppercase">Ca Sĩ</h1>
+		<p class="text-base">
+			Những ca sĩ đang hot,Topic tuyển tập các ca sĩ hot nhất được yêu thích nhất trên Music. Mời các bạn cùng lắng nghe và chia sẻ.
+		</p>
+	</div>
+	<hr />
+	<div id="content">
+		<div class="grid gap-10 grid-auto-min-w-12 justify-around" id="content"></div>
+	</div>
+</div>
+
+<script>
+	$.getJSON("/src/data/singer.json", function (res) {
+		let html = "";
+		for (let i = 0; i < res.length; i++) {
+			html += `
+				<div class="award-music">
+					<h1 class="lg:pt-5 my-4 text-xl font-bold uppercase">${res[i].group}</h1>
+					<div id="awards" class="grid gap-4 grid-auto-min-w-12 justify-center lg:justify-between">
+				`;
+			for (let j = 0; j < res[i].data.length; j++) {
+				html += `
+                    <div class="bg-opacity-10 bg-gray-500 py-5 space-y-2 cursor-pointer text-center container rounded-md relative">
+                        <label class="title far fa-ellipsis-h cursor-pointer absolute right-2 top-1"></label>
+                        <div class="overflow-hidden rounded-full w-1/2 m-auto">
+                            <img src="${res[i].data[j].image}" class="hover:opacity-75 transform hover:scale-110 cursor-pointer duration-500" />
+                        </div>
+                        <h1 class="title text-base font-medium">${res[i].data[j].name}</h1>
+                        <button class="px-3 py-2 transition-all duration-300 rounded-md hover:shadow-md btn-primary border border-white">Quan tâm</button>
+                    </div>
+                `;
+			}
+			html += "</div></div>";
+		}
+		$("#content").html(html);
+	});
+</script>
